@@ -14,7 +14,7 @@
 		<groupId>cn.personal.hongxing.spring-cloud</groupId>
 		<artifactId>spring-cloud-test-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath>..</relativePath> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
