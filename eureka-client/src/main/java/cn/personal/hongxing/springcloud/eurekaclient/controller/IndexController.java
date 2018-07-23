@@ -1,5 +1,6 @@
 package cn.personal.hongxing.springcloud.eurekaclient.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,8 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("index")
 public class IndexController {
 
-    @RequestMapping
-    public String index(){
-        return "There is the start of conquering the world !";
+    @GetMapping("hello")
+    public String index(String name){
+        return "Hi, " + name +", let's go! There is the start of conquering the world !";
     }
 }
