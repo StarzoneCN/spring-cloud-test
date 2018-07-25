@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/StarzoneCN/spring-cloud-config-repository/
+          force-pull: true
+server:
+  port: 1201
+
+
+encrypt:
+  key: didispace
