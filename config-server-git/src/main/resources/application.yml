@@ -10,6 +10,11 @@ spring:
 server:
   port: 1201
 
-
 encrypt:
   key: didispace
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
+

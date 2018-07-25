@@ -18,8 +18,8 @@ public class DcController {
     DiscoveryClient discoveryClient;
 
     @GetMapping("/dc")
-    public String dc() {
-        String services = "Services: " + discoveryClient.getServices();
+    public String dc() throws InterruptedException {
+        String services = "There are the ervices: " + discoveryClient.getServices();
         System.out.println(services);
         return services;
     }
